@@ -1,0 +1,21 @@
+---
+import TeamSvg from "@/assets/team.svg";
+import { Image } from "astro:assets";
+import { Button } from "./ui/button";
+---
+
+<section class="text-gray-600 body-font pt-16">
+  <div class="container mx-auto flex items-center flex-col md:flex-row px-5 py-24">
+    <div class="w-full lg:w-1/2">
+      <img class="object-cover object-center rounded h-[600px] w-full" alt="hero" src="https://dummyimage.com/1200x900">
+    </div>
+        <div class="w-full flex flex-col items-center lg:w-1/2 pl-10" >
+            <Image height={300} src={TeamSvg} alt={"team svg"}/>
+            <div class="flex flex-col justify-center">
+                <h1 class="font-medium text-3xl">Team</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                <Button className="h-12">Join now</Button>
+            </div>
+        </div>
+  </div>
+</section>
